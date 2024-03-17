@@ -1,3 +1,5 @@
-with open('what-devops.txt','r') as open_file:
-    text = open_file.readlines()
-    print(text)
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+print(key)
+
+
